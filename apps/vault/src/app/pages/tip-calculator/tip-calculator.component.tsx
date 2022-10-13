@@ -1,6 +1,10 @@
-import { ChangeEvent, Fragment, useEffect, useState } from 'react';
+import { ChangeEvent, useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 
 const AppTipCalculator = () => {
+  const { pathname } = useLocation();
+  const pageTitle = pathname.substring(10).split('-').join(' ');
+
   const [inputValue, setInputValue] = useState<string | number>('');
   const [tip, setTip] = useState(0);
   const [validInput, setvalidInput] = useState(false);
@@ -34,7 +38,8 @@ const AppTipCalculator = () => {
   }, [inputValue]);
 
   return (
-    <Fragment>
+    <div className="p-12 bg-white flex flex-col grow rounded drop-shadow-md">
+      <h3 className="flex text-2xl font-bold mb-10 capitalize">{pageTitle}</h3>
       <div className="mb-2 flex gap-4 ">
         <input
           className="flex grow border-2 border-amber-100 rounded p-1 focus:border-amber-300 outline-none"
@@ -59,7 +64,7 @@ const AppTipCalculator = () => {
       {inputValue && (
         <span className="flex">{`You should tip £${tip} on £${inputValue}.`}</span>
       )}
-    </Fragment>
+    </div>
   );
 };
 

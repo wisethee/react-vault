@@ -9,11 +9,8 @@ const App = () => {
     <Routes>
       <Route path="/" element={<AppHome />} />
       <Route path="/projects" element={<AppProjects />}>
-        <Route path="/projects/tip-calculator" element={<AppTipCalculator />} />
-        <Route
-          path="/projects/welcome-message"
-          element={<AppWelcomeMessage />}
-        />
+        <Route path="tip-calculator" element={<AppTipCalculator />} />
+        <Route path="welcome-message" element={<AppWelcomeMessage />} />
       </Route>
     </Routes>
   );

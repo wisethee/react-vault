@@ -8,10 +8,7 @@ const AppProjects = () => {
           ← Back to home
         </Link>
       </div>
-      <div className="p-12 bg-white flex flex-col grow rounded drop-shadow-md">
-        <h3 className="flex text-2xl font-bold mb-10">Tip Calculator</h3>
-        <Outlet />
-      </div>
+      <Outlet />
     </div>
   );
 };
