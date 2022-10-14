@@ -1,4 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
+import AppCoinToss from './pages/coin-toss/coin-toss.component';
 import AppHome from './pages/home/home.component';
 import AppProjects from './pages/projects/projects.components';
 import AppTipCalculator from './pages/tip-calculator/tip-calculator.component';
@@ -11,6 +12,7 @@ const App = () => {
       <Route path="/projects" element={<AppProjects />}>
         <Route path="tip-calculator" element={<AppTipCalculator />} />
         <Route path="welcome-message" element={<AppWelcomeMessage />} />
+        <Route path="coin-toss" element={<AppCoinToss />} />
       </Route>
     </Routes>
   );

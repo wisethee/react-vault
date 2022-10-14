@@ -14,6 +14,7 @@ const AppHome = () => {
         <div className="flex flex-wrap gap-3">
           <AppButton to="/projects/tip-calculator">Tip Calculator</AppButton>
           <AppButton to="/projects/welcome-message">Welcome Message</AppButton>
+          <AppButton to="/projects/coin-toss">Coin Toss</AppButton>
         </div>
       </div>
     </main>
