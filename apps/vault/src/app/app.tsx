@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import AppCoinToss from './pages/coin-toss/coin-toss.component';
+import AppDiceGame from './pages/dice-game/duce-game.component';
 import AppHome from './pages/home/home.component';
 import AppProjects from './pages/projects/projects.components';
 import AppRockPaperScissors from './pages/rock-paper-scissors/rock-paper-scissors.component';
@@ -15,6 +16,7 @@ const App = () => {
         <Route path="welcome-message" element={<AppWelcomeMessage />} />
         <Route path="coin-toss" element={<AppCoinToss />} />
         <Route path="rock-paper-scissors" element={<AppRockPaperScissors />} />
+        <Route path="dice-game" element={<AppDiceGame />} />
       </Route>
     </Routes>
   );
