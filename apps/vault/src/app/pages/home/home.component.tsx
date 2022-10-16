@@ -18,6 +18,7 @@ const AppHome = () => {
           <AppButton to="/projects/rock-paper-scissors">
             Rock Paper Scissors
           </AppButton>
+          <AppButton to="/projects/dice-game">Dice Game</AppButton>
         </div>
       </div>
     </main>
