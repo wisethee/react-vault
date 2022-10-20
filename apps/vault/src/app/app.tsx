@@ -3,6 +3,7 @@ import AppCoinToss from './pages/coin-toss/coin-toss.component';
 import AppDadJokes from './pages/dad-jokes/dad-jokes.component';
 import AppDiceGame from './pages/dice-game/dice-game.component';
 import AppHome from './pages/home/home.component';
+import AppProducts from './pages/products/products.component';
 import AppProjects from './pages/projects/projects.components';
 import AppRockPaperScissors from './pages/rock-paper-scissors/rock-paper-scissors.component';
 import AppTipCalculator from './pages/tip-calculator/tip-calculator.component';
@@ -19,6 +20,7 @@ const App = () => {
         <Route path="rock-paper-scissors" element={<AppRockPaperScissors />} />
         <Route path="dice-game" element={<AppDiceGame />} />
         <Route path="dad-jokes" element={<AppDadJokes />} />
+        <Route path="products" element={<AppProducts />} />
       </Route>
     </Routes>
   );

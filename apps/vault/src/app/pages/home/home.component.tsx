@@ -20,6 +20,7 @@ const AppHome = () => {
           </AppButton>
           <AppButton to="/projects/dice-game">Dice Game</AppButton>
           <AppButton to="/projects/dad-jokes">Dad Jokes</AppButton>
+          <AppButton to="/projects/products">Products</AppButton>
         </div>
       </div>
     </main>
