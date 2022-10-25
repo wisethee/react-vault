@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import AppCoinToss from './pages/coin-toss/coin-toss.component';
+import AppCountdownTimer from './pages/countdown-timer/countdown-timer.component';
 import AppDadJokes from './pages/dad-jokes/dad-jokes.component';
 import AppDiceGame from './pages/dice-game/dice-game.component';
 import AppHome from './pages/home/home.component';
@@ -21,6 +22,7 @@ const App = () => {
         <Route path="dice-game" element={<AppDiceGame />} />
         <Route path="dad-jokes" element={<AppDadJokes />} />
         <Route path="products" element={<AppProducts />} />
+        <Route path="countdown-timer" element={<AppCountdownTimer />} />
       </Route>
     </Routes>
   );
